@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --cl-black: #323232;
+    --bg-white: #fff;
+    --bg-blue: #2bbaff;
+}
+body{
+    background:var(--cl-black);
+}
+.bg{
+    background: var(--bg-blue);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.bg h2{
+    position: relative;
+    color: var(--bg-white);
+    font-size: 5em;
+}
+section{
+    padding: 100px;
+}
+section h2{
+    color: var(--bg-white);
+    font-size: 2em;
+}
+section p{
+    color: #fff;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+}
+.skewedOne{
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: var(--cl-black);
+    transform: skewY(-15deg);
+    transform-origin: top left;
+}
+.skewedTwo{
+    position: absolute;
+    bottom: -100%;
+    right: 50%;
+    width: 100%;
+    height: 100%;
+    background: var(--cl-black);
+    transform: skewY(15deg);
+    transform-origin: top right;
+}
