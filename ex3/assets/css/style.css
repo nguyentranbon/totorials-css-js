@@ -166,13 +166,3 @@ a {
 .nav__text {
   font-weight: 700;
 }
-
-
-/* EXPANDER */
-.expander{
-  padding: 1rem 0 0 12rem;
-  margin-left: 0;
-}
-.content-body {
-  margin-left: 5.2rem;
-}
