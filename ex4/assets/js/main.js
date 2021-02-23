@@ -1,4 +1,4 @@
-/* SHOW MENU */
+
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId);
     const nav = document.getElementById(navId);
@@ -9,4 +9,3 @@ const showMenu = (toggleId, navId) =>{
     }
 }
 showMenu('nav-toggle','nav-menu');
-console.log("12312")

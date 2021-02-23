@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    </head>
+    
+    <body>
+        <aside class="sidebar">
+            <div class="sidebar__title">
+                <h2>Danh mục</h2>
+            </div>
+            <div class="sidebar__content">
+                <nav class="sidebar__nav">
+                    <ul class="sidebar__nav-category">
+                        <li class="sidebar__nav-item">
+                            <i class="fa fa-arrow-circle-right sidebar__nav-icon"></i>
+                            <a title="Rau sạch" class="sidebar__nav-link" href="#">Rau sạch</a>
+                        </li>
+                        <li class="sidebar__nav-item">
+                            <i class="fa fa-arrow-circle-right sidebar__nav-icon"></i>
+                            <a title="Rau sạch" class="sidebar__nav-link" href="#">Rau sạch</a>
+                            <i class="fa fa-angle-down sidebar__nav-icon__dropdown"></i>
+                            <ul class="dropdown__nav-menu">
+                                <li class="dropdown__nav-submenu nav-item">
+                                    <a title="Menu demo 1" class="sidebar__nav-link" href="#">Menu demo 1</a>
+                                    <i class="fa fa-angle-down sidebar__nav-icon__dropdown"></i>
+                                    <ul class="dropdown__nav-menu">
+                                        <li class="sidebar__nav-item">
+                                            <a title="Menu demo 2" class="sidebar__nav-link" href="#">Menu demo 2</a>
+                                        </li>
+                                        <li class="sidebar__nav-item">
+                                            <a title="Menu demo 2" class="sidebar__nav-link" href="#">Menu demo 2</a>
+                                        </li>
+                                        <li class="sidebar__nav-item">
+                                            <a title="Menu demo 2" class="sidebar__nav-link" href="#">Menu demo 2</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown__nav-submenu nav-item">
+                                    <a title="Menu demo 1" class="sidebar__nav-link" href="#">Menu demo 1</a>
+                                    <i class="fa fa-angle-down sidebar__nav-icon__dropdown"></i>
+                                </li>
+                            </ul>
+                            
+                        </li>
+                        <li class="sidebar__nav-item">
+                            <i class="fa fa-arrow-circle-right sidebar__nav-icon"></i>
+                            <a title="Rau sạch" class="sidebar__nav-link" href="#">Hải sản tươi</a>
+                        </li>
+                        
+                        <li class="sidebar__nav-item">
+                            <i class="fa fa-arrow-circle-right sidebar__nav-icon"></i>
+                            <a title="Rau sạch" class="sidebar__nav-link" href="#">Hoa quả tươi</a>
+                        </li>
+                        <li class="sidebar__nav-item">
+                            <i class="fa fa-arrow-circle-right sidebar__nav-icon"></i>
+                            <a title="Rau sạch" class="sidebar__nav-link" href="#">Nhập khẩu</a>
+                        </li>
+                        <li class="sidebar__nav-item">
+                            <i class="fa fa-arrow-circle-right sidebar__nav-icon"></i>
+                            <a title="Rau sạch" class="sidebar__nav-link" href="#">Cá nhật bản</a>
+                        </li>
+                        <li class="sidebar__nav-item">
+                            <i class="fa fa-arrow-circle-right sidebar__nav-icon"></i>
+                            <a title="Rau sạch" class="sidebar__nav-link" href="#">Rau đà lạt</a>
+                        </li>
+                        
+                        <li class="sidebar__nav-item">
+                            <i class="fa fa-arrow-circle-right sidebar__nav-icon"></i>
+                            <a title="Rau sạch" class="sidebar__nav-link" href="#">Hoa quả nhập</a>
+                        </li>
+                        <li class="sidebar__nav-item">
+                            <i class="fa fa-arrow-circle-right sidebar__nav-icon"></i>
+                            <a title="Rau sạch" class="sidebar__nav-link" href="#">Lương thực</a>
+                        </li>
+                        <li class="sidebar__nav-item">
+                            <i class="fa fa-arrow-circle-right sidebar__nav-icon"></i>
+                            <a title="Rau sạch" class="sidebar__nav-link" href="#">Đang khuyến mãi</a>
+                        </li>
+                        <li class="sidebar__nav-item">
+                            <i class="fa fa-arrow-circle-right sidebar__nav-icon"></i>
+                            <a title="Rau sạch" class="sidebar__nav-link" href="#">Sản phẩm hot</a>
+                        </li>
+                        <li class="sidebar__nav-item sidebar__nav-item-more">
+                            <i class="fa fa-arrow-circle-right sidebar__nav-icon"></i>
+                            <a title="Rau sạch" class="sidebar__nav-link" href="#">Xem thêm</a>
+                        </li>
+                        <li class="sidebar__nav-item sidebar__nav-item-collapse">
+                            <i class="fa fa-arrow-circle-right sidebar__nav-icon"></i>
+                            <a title="Rau sạch" class="sidebar__nav-link" href="#">Thu gọn</a>
+                        </li>
+                        
+                        
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script>
+            jQuery('.sidebar__nav-item-more').click(function (e) {
+                    e.preventDefault();
+                    jQuery('.sidebar__nav-item')
+                        .css('display', 'block');
+                    jQuery(this)
+                        .hide();
+                    jQuery('.sidebar__nav-item-collapse')
+                        .show();
+                })
+            jQuery('.sidebar__nav-item-collapse').click(function (e) {
+                    e.preventDefault();
+                    jQuery('.sidebar__nav-item')
+                        .css('display', 'none');
+                    jQuery(this)
+                        .hide();
+                    jQuery('.sidebar__nav-item-more')
+                        .show();
+                })
+            
+        </script>
+    </body>
+    
+</html>
