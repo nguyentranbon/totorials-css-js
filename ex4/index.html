@@ -12,7 +12,7 @@
 </head>
 <body>
     <!-- === SCROLL TOP === -->
-    <a href="#" class="scroll__top scroll__top-show" id="scroll-top">
+    <a href="#" class="scroll__top" id="scroll-top">
         <i class="fas fa-chevron-up scroll__top-icon"></i>
     </a>
     <!-- ===== HEADER ===== -->
@@ -21,11 +21,12 @@
             <a href="#" class="nav__logo">Tasty</a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="" class="nav__link nav__link-active">Home</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">Services</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">Menu</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">Contact us</a></li>
+                    <li class="nav__item"><a href="#home" class="nav__link nav__link-active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
+                    <li><i class='far fa-moon change-theme' id="theme-button"></i></li>
                 </ul>
             </div>
             <div class="nav__toggle" id="nav-toggle">
@@ -48,7 +49,7 @@
             </div>
         </section>
         <!-- === ABOUT === -->
-        <section class="about section">
+        <section class="about section" id="about">
             <div class="about__container bd-container bd-grid">
                 <div class="about__data">
                     <span class="about__initial section-subtitle">About us</span>
@@ -60,7 +61,7 @@
             </div>
         </section>
         <!-- === SERVICES === -->
-        <section class="services section bd-container">
+        <section class="services section bd-container" id="services">
             <span class="section-subtitle">Offering</span>
             <h2 class="section-title">Our mazing services</h2>
             <div class="services__container bd-grid">
@@ -262,7 +263,7 @@
             </div>
         </section>
         <!-- === MENU === -->
-        <section class="menu bd-container" >
+        <section class="menu bd-container" id="menu">
             <span class="section-subtitle">Special</span>
             <div class="section-title">Menu of the week</div>
             <div class="menu__container bd-grid">
@@ -290,17 +291,18 @@
             </div>
         </section>
         <!-- === APP === -->
-        <section class="app section bd-container">
+        <section class="app section bd-container" id="contact">
             <div class="app__container bd-grid">
                 <div class="app__data">
                     <span class="section-subtitle app__initial">App</span>
-                    <h2 class="section-title app__initial">App is variables</h2>
+                    <h2 class="section-title app__initial">App is aviable</h2>
                     <p class="app__description">Find our application and download it, you can make reservations, food orders, see your deliveries on the way and much more.</p>
                     <div class="app__stores">
-                        <a href="#"><img src="assets/images/app2.png" alt="" class="app__store"></a>
+                        <a href="#"><img src="assets/images/app1.png" alt="" class="app__store"></a>
                         <a href="#"><img src="assets/images/app2.png" alt="" class="app__store"></a>
                     </div>
                 </div>
+
                 <img src="assets/images/movil-app.png" alt="" class="app__img">
             </div>
         </section>
