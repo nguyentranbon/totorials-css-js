@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop demo</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <!-- Link font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!-- Link css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="l-header" id="header">
+        <nav class="nav bd-container bd-grid">
+            <a href="#" class="nav__logo">BLOG SHOP</a>
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__close">
+                    <button class="modal__close-btn">
+                        <i class="fa fa-times"></i>
+                    </button>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Product</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Shop</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Vendors</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Page</a></li>
+                </ul>
+            </div>
+            <div class="nav__right">
+                <i class="fas fa-search nav__icon nav_icon-search"></i>
+                <i class="fas fa-shopping-cart nav__icon"></i>
+                <i class="fas fa-bars nav__icon nav__icon-toggle" id="nav-toggle"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="modal" id="modal"></div>
+        <!--=== HERO ===-->
+        <section class="hero">
+            <div class="hero__container bd-grid">
+                <div class="hero__data">
+                    <span class="hero__subtitle">Exclusive Sales</span>
+                    <h1 class="hero__title"></h1>
+                    <h3 class="hero__description">Get all exclusive offers for the season</h3>
+                    <a href="#" class="button">View Collection</a>
+                </div>
+                <img src="assets/images/hero.png" alt="" class="hero__img">
+            </div>
+        </section>
+    </main>
+    <!-- Link javascript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
